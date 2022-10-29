@@ -1,0 +1,205 @@
+/* основний колір тексту color: #212121;
+другорядний тексту color: #757575;
+ховер ссилки, колір кнопок: #2196F3;
+лого: #000000;
+h1: #FFFFFF;
+
+колір фону #FFFFFF;
+другорядний колір фону #F5F4FA;
+колір героя, футера #2F303A; 
+
+*/
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196F3;
+  --second-text-color: #FFFFFF;
+  --primary-background-color: #FFFFFF;
+  --accent-background-color: #2F303A;
+  --second-background-color: #F5F4FA;
+}
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+font-size: 14px;
+line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* шапка сайту */
+.logo {
+color: var(--accent-color);
+text-decoration: none;
+font-family: 'Raleway';
+font-size: 26px;
+line-height: 1.19;
+}
+.logo-header {
+  color: #000000;
+}
+/* навігація */
+.site-nav .link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.contacts a {
+  color: var(--title-text-color);
+  text-decoration: none;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-color);
+}
+/* герой */
+.hero {
+  background-color: var(--accent-background-color);
+  text-align: center;
+}
+.hero-title {
+  color: #FFFFFF;
+  font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+}
+.hero-button {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-text-color);
+  background-color: var(--second-background-color);
+}
+
+/* переваги */
+.visually-hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.section-title {
+  color: var(--primary-text-color);
+font-size: 36px;
+text-align: center;
+}
+.benefits .title {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+}
+.benefits .text {
+color: var(--title-text-color);
+}
+/* чим займаємось */
+
+
+/* співробітники */
+.team {
+  background-color: var(--second-background-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.job-title {
+background-color: var(--primary-background-color);
+}
+.wokers .title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+.wokers .text {
+  color: var(--title-text-color);
+}
+/* портфоліо */
+.example .title {
+  color: var(--primary-text-color);
+}
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--second-background-color);
+  cursor: pointer;
+  font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
+text-align: center;
+}
+.button:hover, 
+.button:focus {
+  color: var(--second-text-color);
+  background-color: var(--accent-color);
+}
+.example-job {
+  background-color: var(--primary-background-color);
+}
+.example {
+  text-align: center;
+}
+.example .title {
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.example .text {
+font-size: 16px;
+line-height: 1.88;
+color: var(--title-text-color);
+}
+/* футер */
+.footer {
+  background-color: var(--accent-background-color);
+}
+.logo-footer {
+  color: var(--second-text-color);
+  text-decoration: none;
+}
+.address {
+  color: var(--second-text-color);
+  font-style: normal;
+  line-height: 1.17;
+}
+.footer-address a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.17;
+}
+.footer-address a:hover,
+.footer-address a:focus {
+  color: var(--accent-color);
+}
