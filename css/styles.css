@@ -174,7 +174,7 @@ margin-bottom: 50px;
 }
 .benefits {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 } 
 .benefits-list {
   width: 270px;
@@ -198,18 +198,22 @@ display: block;
 }
 
 /* співробітники */
-.worker {
-  display: block;
-}
+
 .team {
   background-color: var(--second-background-color);
   text-align: center;
   font-size: 16px;
   line-height: 1.19;
 }
-.job-title {
+.workers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wokers-job {
 background-color: var(--primary-background-color);
 width: 270px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 .wokers .title {
   color: var(--primary-text-color);
@@ -231,6 +235,7 @@ width: 270px;
 }
 .auth-nav {
   display: flex;
+  align-items: center;
   margin-bottom: 50px;
 }
 .auth-nav  .nav + .nav {
@@ -256,13 +261,21 @@ border: 0 solid transparent;
   color: var(--second-text-color);
   background-color: var(--accent-color);
 }
-.example-job {
-  background-color: var(--primary-background-color);
-}
 .example {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+}
+.example-job {
+  background-color: var(--primary-background-color);
+  border: 1px solid #EEEEEE;
+
+}
+.example-job:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.example-job:not(:last-child(-n +3)) {
+  margin-bottom: 30px;
 }
 .example .title {
 font-size: 18px;
@@ -279,6 +292,8 @@ margin-bottom: 20px;
 /* футер */
 .footer {
   background-color: var(--accent-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--second-text-color);
@@ -288,14 +303,21 @@ margin-bottom: 20px;
   color: var(--second-text-color);
   font-style: normal;
   line-height: 1.17;
+  margin-top: 20px ;
+  margin-bottom: 9px;
 }
+
 .footer-address a {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
   line-height: 1.17;
 }
+.footer-address .mailto {
+  margin-bottom: 9px;
+}
 .footer-address a:hover,
 .footer-address a:focus {
   color: var(--accent-color);
 }
+
