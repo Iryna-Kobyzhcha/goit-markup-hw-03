@@ -1,14 +1,3 @@
-/* основний колір тексту color: #212121;
-другорядний тексту color: #757575;
-ховер ссилки, колір кнопок: #2196F3;
-лого: #000000;
-h1: #FFFFFF;
-
-колір фону #FFFFFF;
-другорядний колір фону #F5F4FA;
-колір героя, футера #2F303A; 
-
-*/
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
@@ -40,13 +29,18 @@ h1, h2, h3, p {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-   outline-style: groove; 
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* шапка сайту */
 .header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ECECEC;
+  box-shadow: rgba(0, 0, 0, 0.25); 
 }
 .logo {
 color: var(--accent-color);
@@ -70,15 +64,14 @@ line-height: 1.19;
 }
 .site-nav .link {
   display: block;
-padding-top: 32px;
-padding-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
   text-decoration: none;
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
-
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-nav .link:hover, 
 .site-nav .link:focus {
@@ -193,10 +186,12 @@ color: var(--title-text-color);
 }
 
 /* чим займаємось */
-.work {
-display: block;
+.work-list {
+  display: flex;
 }
-
+.work-list .work:not(:last-child) {
+  margin-right: 30px;
+}
 /* співробітники */
 
 .team {
@@ -209,34 +204,34 @@ display: block;
   display: flex;
   flex-wrap: wrap;
 }
-.wokers-job {
+.workers-job {
 background-color: var(--primary-background-color);
 width: 270px;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
-.wokers .title {
+.workers-job:not(:last-child) {
+  margin-right: 30px;
+}
+.workers .worker {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.workers .title {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
 }
-.wokers .text {
+.workers .text {
   color: var(--title-text-color);
-  margin-bottom: 30px;
 }
 /* портфоліо */
-.example-job {
-  width: 370px;
-  /* margin: 30px 30px; */
-}
-.example .title {
-  color: var(--primary-text-color);
-}
 .auth-nav {
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .auth-nav  .nav + .nav {
   margin-left: 8px;
@@ -264,12 +259,15 @@ border: 0 solid transparent;
 .example {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
+  text-align: left;
 }
 .example-job {
+  width: 370px;
   background-color: var(--primary-background-color);
   border: 1px solid #EEEEEE;
-
+}
+.example-job .content {
+padding: 20px 24px;
 }
 .example-job:not(:nth-child(3n)) {
   margin-right: 30px;
@@ -278,6 +276,7 @@ border: 0 solid transparent;
   margin-bottom: 30px;
 }
 .example .title {
+  color: var(--primary-text-color);
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
@@ -287,7 +286,6 @@ margin-bottom: 4px;
 font-size: 16px;
 line-height: 1.88;
 color: var(--title-text-color);
-margin-bottom: 20px;
 }
 /* футер */
 .footer {
