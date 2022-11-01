@@ -12,7 +12,7 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
 font-size: 14px;
-line-height: 1.17;
+line-height: 1.71;
   letter-spacing: 0.03em;
 }
 h1, h2, h3, p {
@@ -36,11 +36,13 @@ img {
   height: auto;
 }
 /* шапка сайту */
+.line {
+  border-bottom: 1px solid #ECECEC;
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
 .header {
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ECECEC;
-  box-shadow: rgba(0, 0, 0, 0.25); 
+  align-items: center; 
 }
 .logo {
 color: var(--accent-color);
@@ -117,6 +119,10 @@ padding-top: 0;
   padding-bottom: 200px;
 }
 .hero-title {
+  margin-left: auto;
+    margin-right: auto;
+  width: 696px;
+  text-align: center;
   color: #FFFFFF;
   font-weight: 900;
 font-size: 44px;
@@ -300,7 +306,7 @@ color: var(--title-text-color);
 .address {
   color: var(--second-text-color);
   font-style: normal;
-  line-height: 1.17;
+  line-height: 1.71;
   margin-top: 20px ;
   margin-bottom: 9px;
 }
@@ -309,7 +315,7 @@ color: var(--title-text-color);
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
-  line-height: 1.17;
+  line-height: 1.71;
 }
 .footer-address .mailto {
   margin-bottom: 9px;
